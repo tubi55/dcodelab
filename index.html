@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script defer src="myYoutube.js"></script>
+    <script defer src="main.js"></script>
+    <script>
+        $("documnet").ready(function(){
+            $("#vidGallery").myYoutube({
+                key : "AIzaSyBZMJA5tUTbNqE-rTkomkwJuQBKMs1HvEA",
+                playList : "PLCLKoygJfCLo08VXJ3EHeVdTl_TSkVII8"             
+            });
+        })
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>DOCODELAB</h1>
+
+        <ul>
+            <li class="on">Home</li>
+            <li>About</li>
+            <li>Porfolio</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+    <main class="face1">
+        <section id="home" class="on">
+            <h2>David, Choi</h2>
+            <h3>UI/UX DESIGNER & FRONT-END DEVELOPER</h3>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <ul>
+                <li><strong>Name :</strong>  Sungil, Choi</li>
+                <li><strong>Education :</strong>  Majored in UI/UX Dev, Mapo Nanu College</li>
+                <li><strong>M.P :</strong>  010-1234-5678</li>
+                <li><strong>E-Mail :</strong>  maponaru@google.com</li>
+            </ul>
+
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae omnis voluptates excepturi est reiciendis eos quos, laborum quam modi! Iste mollitia, perspiciatis enim obcaecati illo praesentium nam eveniet cumque iusto at quis nostrum distinctio dignissimos esse, dolorem expedita! Pariatur!
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="vidGallery">
+                <!--
+                <aritcle>
+                    <a href="" class="pic con">
+                        유튜브 썸네일 이미지 및 링크
+                    </a>
+                    <div class="con">
+                        <h2>유튜브 제목</h2>
+                        <p>유튜브 설명글</p>
+                        <span>유튜브 업로드 날짜</span>
+                    </div>
+                </aritcle>
+                -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <p class="open-form-btn">문의하기</p>
+                <form id="contact-form" class="closed-form">
+                    <input type="hidden" name="contact_number">
+                    <input type="text" required placeholder="이름*" name="to_name" class="formReset">
+                    <input type="text" required placeholder="연락처*" name="contact" class="formReset">
+                    <input type="email" required placeholder="이메일*" name="from_name" class="formReset">
+                    <textarea required placeholder="문의사항*" name="message_html" class="formReset"></textarea>
+                    <input type="submit" value="문의하기">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+
+</body>
+</html>
