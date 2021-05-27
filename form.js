@@ -4,7 +4,7 @@
 })();
 
 window.onload = function() {
-    var form = getElementById("contact-form");
+    var form = document.getElementById("contact-form");
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
